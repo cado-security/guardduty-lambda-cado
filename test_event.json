@@ -1,0 +1,93 @@
+{
+  "version": "0",
+  "id": "1111c34c-ce54-1111-1111-53fcc1d1111",
+  "detail-type": "GuardDuty Finding",
+  "source": "aws.guardduty",
+  "account": "111",
+  "time": "2022-01-31T12:07:02Z",
+  "region": "us-east-2",
+  "resources": [],
+  "detail": {
+    "schemaVersion": "2.0",
+    "accountId": "111",
+    "region": "us-east-2",
+    "partition": "aws",
+    "id": "11115628dedc84e090aae636c4cd1111",
+    "arn": "arn:aws:guardduty:us-east-2:111:detector/1111490ff42a9aef04e1e439c1081111/finding/11115628dedc84e090aae636c4cd1111",
+    "type": "CryptoCurrency:EC2/BitcoinTool.B!DNS",
+    "resource": {
+      "resourceType": "Instance",
+      "instanceDetails": {
+        "instanceId": "i-1111c461afc081111",
+        "instanceType": "t2.micro",
+        "launchTime": "2022-01-25T16:56:29.000Z",
+        "productCodes": [],
+        "networkInterfaces": [
+          {
+            "ipv6Addresses": [],
+            "networkInterfaceId": "eni-1111f6c370e671111",
+            "privateDnsName": "ip-172-31-45-11.us-east-2.compute.internal",
+            "privateIpAddress": "172.31.45.11",
+            "privateIpAddresses": [
+              {
+                "privateDnsName": "ip-172-31-45-11.us-east-2.compute.internal",
+                "privateIpAddress": "172.31.45.11"
+              }
+            ],
+            "subnetId": "subnet-edf6d9a1",
+            "vpcId": "vpc-1111aa20",
+            "securityGroups": [
+              {
+                "groupName": "launch-wizard-4",
+                "groupId": "sg-1111d484575411111"
+              }
+            ],
+            "publicDnsName": "ec2-11-219-32-111.us-east-2.compute.amazonaws.com",
+            "publicIp": "11.219.32.111"
+          }
+        ],
+        "tags": [
+          {
+            "key": "Name",
+            "value": "VictimBox"
+          }
+        ],
+        "instanceState": "running",
+        "availabilityZone": "us-east-2c",
+        "imageId": "ami-111189eb624931111",
+        "imageDescription": "Amazon Linux 2 Kernel 5.10 AMI 2.0.20211223.0 x86_64 HVM gp2"
+      }
+    },
+    "service": {
+      "serviceName": "guardduty",
+      "detectorId": "111190ff42a9aef04e1e439c1081111",
+      "action": {
+        "actionType": "DNS_REQUEST",
+        "dnsRequestAction": {
+          "domain": "xmr.pool.minergate.com",
+          "protocol": "UDP"
+        }
+      },
+      "resourceRole": "TARGET",
+      "additionalInfo": {
+        "threatListName": "Amazon,ProofPoint"
+      },
+      "evidence": {
+        "threatIntelligenceDetails": [
+          {
+            "threatListName": "Amazon,ProofPoint",
+            "threatNames": []
+          }
+        ]
+      },
+      "eventFirstSeen": "2022-01-30T18:35:02.000Z",
+      "eventLastSeen": "2022-01-31T11:48:17.000Z",
+      "count": 23
+    },
+    "severity": 8,
+    "createdAt": "2022-01-30T18:49:05.209Z",
+    "updatedAt": "2022-01-31T11:59:41.301Z",
+    "title": "Bitcoin-related domain name queried by EC2 instance i-111.",
+    "description": "EC2 instance i-111 is querying a domain name that is associated with Bitcoin-related activity."
+  }
+}
